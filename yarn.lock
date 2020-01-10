@@ -2006,6 +2006,11 @@ chardet@^0.7.0:
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
   integrity sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==
 
+cheap-ruler@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/cheap-ruler/-/cheap-ruler-2.5.1.tgz#1c47ece27fc14bc95e817e16d49ceb5009a7e987"
+  integrity sha512-5x22zeBDPIXdDDiqIsC8tkOY1HEBD6FCRCfsvgwNg9yelClCpvfNGk0L2MotxTDEL4aoXOUUgdm3rPOBSLF+jA==
+
 check-types@^7.3.0:
   version "7.4.0"
   resolved "https://registry.yarnpkg.com/check-types/-/check-types-7.4.0.tgz#0378ec1b9616ec71f774931a3c6516fad8c152f4"
@@ -3795,6 +3800,11 @@ gauge@~2.7.3:
     string-width "^1.0.1"
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
+
+geojson-bounds@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/geojson-bounds/-/geojson-bounds-1.0.2.tgz#c4f6e64223b8c919436707fe1acfabe93145b986"
+  integrity sha512-VTVisOF00DPgIl5xodFx5xyt2XPMXsz2CIAAxFMAtXbrOJjz2gwgzkGQtLEQuuSztn4plIy3Cgravc3QTu9S/A==
 
 geojson-vt@^3.2.1:
   version "3.2.1"
@@ -7238,6 +7248,13 @@ shebang-regex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
   integrity sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=
+
+sheets2geojson@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/sheets2geojson/-/sheets2geojson-0.0.2.tgz#b114be03d9536d9ffb77ae59b315fdeff3cf0185"
+  integrity sha512-ODo2evRJrRTd0l9+SOm3o3ydNErmfWaLSYBOU43gfPjhHIFO2CaKXBkADVevmpCeqT6ny4So66Mvvdsg/JSw0w==
+  dependencies:
+    d3-fetch "^1.1.2"
 
 shell-quote@^1.6.1:
   version "1.6.1"
