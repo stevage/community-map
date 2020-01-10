@@ -39,7 +39,16 @@ export default {
         });
         U.init(map);
         window.map = map;
-        window.Map = this;
+        window.app.Map = this;
+
+
+    // const sheetNo = 1;
+        // I don't know in which context json1 works vs json2. 
+        // https://medium.com/dali-lab/google-sheets-and-json-easy-backend-e29e9ef3df2
+        // const json1 = `https://spreadsheets.google.com/feeds/cells/${sheetsId}/${sheetNo}/public/full?alt=json`
+        // const json2 = `https://spreadsheets.google.com/feeds/cells/${sheetsId}/${sheetNo}/od6/public/values?alt=json`
+        const sheetID = (window.location.hash.match(/sheet=([a-zA-Z0-9_-]+)/) || [])[1] || '2PACX-1vR9qYMju-qqH_IL8e2ksN0wpVXfHBUEKF079WX1eSAgPFRG5z0RAmpjVwS8sVrZSC0fVrNpSMjaB5Cu';
+        const points = await sheets2geojson(sheetID);
 
         const points = toPoints(await d3.csv(csvSource));
         map.U.addGeoJSON('points', points);
@@ -50,7 +59,7 @@ export default {
         map.U.hoverPointer('points-circles');
         map.on('click', 'points-circles', e => {
             console.log(e);
-            window.FeatureInfo.feature = e.features[0];
+            window.app.FeatureInfo.feature = e.features[0];
         });
         
     }

@@ -12,7 +12,7 @@ export default {
         feature: undefined
     }),
     created() {
-        window.FeatureInfo = this;
+        window.app.FeatureInfo = this;
     }
 }
 </script>

@@ -5,22 +5,26 @@
         #middle.flex.flex-auto
             #sidebar.br.b--light-gray.overflow-auto.w3.w5-ns
                 .b.i See the README for tips on customising.              
+                FeatureInfo
             #map-container.relative.flex-auto
                 Map
                 #overlay.absolute
-                    FeatureInfo
         #bottom.bt.b--light-gray.flex-none.h2
 </template>
 
 <script>
 import Map from './components/Map.vue'
 import FeatureInfo from './components/FeatureInfo.vue'
-
+window.app = {
+}
 export default {
     name: 'app',
     components: {
       Map,
       FeatureInfo
+    },
+    created() {
+        window.app.App = this;
     }
 }
 
