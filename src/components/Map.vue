@@ -22,7 +22,7 @@ export default {
         window.app.Map = this;
 
 
-    // const sheetNo = 1;
+        // const sheetNo = 1;
         // I don't know in which context json1 works vs json2. 
         // https://medium.com/dali-lab/google-sheets-and-json-easy-backend-e29e9ef3df2
         // const json1 = `https://spreadsheets.google.com/feeds/cells/${sheetsId}/${sheetNo}/public/full?alt=json`

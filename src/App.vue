@@ -1,15 +1,15 @@
 <template lang="pug">
     #app.flex.flex-column.vh-100.avenir
-        #top.bb.b--gray.bg-washed-yellow.h3
+        #top.bb.b--gray.bg-washed-yellow
             h1 Community Map
         #middle.flex.flex-auto
-            #sidebar.br.b--light-gray.overflow-auto.w3.w5-ns
+            #sidebar.br.b--light-gray.overflow-auto.w3.w-25-ns
                 .b.i See the README for tips on customising.              
                 FeatureInfo
             #map-container.relative.flex-auto
                 Map
                 #overlay.absolute
-        #bottom.bt.b--light-gray.flex-none.h2
+        #bottom.bt.b--light-gray.flex-none
 </template>
 
 <script>
@@ -37,6 +37,9 @@ html, body {
   width: 100%;
   margin:0;
   padding:0;
+}
+#sidebar {
+    min-width:200px;
 }
 
 </style>
