@@ -36,3 +36,11 @@ npm run serve
 2. Push an initial commit
 3. Run `yarn run deploy`
 4. Now configure Github Pages to use `docs` directory
+
+### Customising
+
+There aren't many components. 
+
+* App.vue: Overall structure of the site
+* FeatureInfo.vue: Information shown when you click on something
+* Map.vue: Initialises the map and adds stuff to it.
