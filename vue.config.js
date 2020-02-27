@@ -1,8 +1,11 @@
 CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
-    baseUrl: '',
+    publicPath: '',
     devServer: {
-        historyApiFallback: false
+        historyApiFallback: false,
+        port: 8080,
+        https: false,
+        // open: true, // automatically open browser
     }, 
     configureWebpack: {
         plugins: [

@@ -4402,9 +4402,9 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-mapbox-gl-utils@^0.27.2:
-  version "0.27.2"
-  resolved "https://registry.yarnpkg.com/mapbox-gl-utils/-/mapbox-gl-utils-0.27.2.tgz#750de967309c61f357a95dbe3d1db034ac52d7f8"
+mapbox-gl-utils@^0.28.1:
+  version "0.28.1"
+  resolved "https://registry.yarnpkg.com/mapbox-gl-utils/-/mapbox-gl-utils-0.28.1.tgz#b5f4ef462392d30aa9f661e47e9f5ab86b2a4476"
   dependencies:
     "@mapbox/expression-jamsession" "^0.4.2"
     kebab-case "^1.0.0"

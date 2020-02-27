@@ -6,7 +6,7 @@
 import mapboxgl from 'mapbox-gl';
 import U from 'mapbox-gl-utils';
 import { sheets2geojson } from 'sheets2geojson';
-
+import { EventBus } from '../EventBus';
 export default {
     async mounted() {
         // replace this Mapbox access token with your own

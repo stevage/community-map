@@ -15,6 +15,7 @@
 <script>
 import Map from './components/Map.vue'
 import FeatureInfo from './components/FeatureInfo.vue'
+import { EventBus } from './EventBus';
 window.app = {
 }
 export default {
