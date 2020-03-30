@@ -9,33 +9,34 @@ div
 </template>
 
 <script>
+import { EventBus } from "../EventBus";
 export default {
     name: "FeatureInfo",
     data: () => ({
         feature: undefined,
-        ignoreProps: ['id','Longitude','Latitude', 'image_url']
+        ignoreProps: ["id", "Longitude", "Latitude", "image_url"]
     }),
     computed: {
         p() {
             return this.feature && this.feature.properties;
         },
         imageUrl() {
-            return this.p && this.p.image_url
-        },
+            return this.p && this.p.image_url;
+        }
     },
     created() {
         window.app.FeatureInfo = this;
+        EventBus.$on("select-feature", feature => (this.feature = feature));
     }
-}
+};
 </script>
 
 <style scoped>
 #FeatureInfo th {
-    text-align:  right;
+    text-align: right;
 }
 
 .image {
     width: 100%;
 }
-
 </style>
